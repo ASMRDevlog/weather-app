@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Feather icon link -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.0/dist/feather.min.js"></script>
+
+    <!-- CSS Links -->
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="weather_card__container">
+                <div class="search" id="search">
+                    <div class="icon">
+                        <i data-feather="search"></i>
+                    </div>
+                    <input type="text" id="search-field" placeholder="Search for city">
+                </div>
+
+                <div class="weather_card">
+                    <div class="main-section">
+                        <div class="main-temperature">
+                            <h1 id="main-temp">20&deg</h1>
+                        </div>
+                        <div class="location">
+                            <h2 id="country">JAPAN</h2>
+                            <h2 id="city">Tokyo</h2>
+                        </div>
+                    </div>
+                    <div class="more-section">
+                        <div class="more-info feels-like">
+                            <div class="icon">
+                                <i data-feather="smile"></i>
+                            </div>
+                            <p id="feels-like">22&deg</p>
+                        </div>
+                        <div class="more-info wind-speed">
+                            <div class="icon">
+                                <i data-feather="wind"></i>
+                            </div>
+                            <p id="wind-speed">32 km/hr</p>
+                        </div>
+                        <div class="more-info humidity">
+                            <div class="icon">
+                                <i data-feather="droplet"></i>
+                            </div>
+                            <p id="humidity">6%</p>
+                        </div>
+                    </div>
+                    <div class="sky-information">
+                        <p id="sky-info">Weather: Clear sky</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
